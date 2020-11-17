@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Send POST request to Slack App
         run: |-
-          curl -X POST -H "Content-Type: application/json" -d '{"Name":"hogehoge", "Age":"fuga"}' ${{ secrets.REQUEST_URL }}
+          curl -X POST -H "Content-Type: application/json" -d '${{ github }}' ${{ secrets.REQUEST_URL }}
