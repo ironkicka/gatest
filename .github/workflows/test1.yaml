@@ -14,4 +14,4 @@ jobs:
         with:
           args: '{\"channel\":\"C6Y3ES5EU\", \"text\":\"<!here>\n:fire::fire::fire: 変更あリ！ :fire::fire::fire:\nAuthor: ${{github.event.commits[0].author.username}}\nCommit_message: ${{github.event.commits[0].message}}\nURL: ${{github.event.commits[0].url}}\"}'
         env:
-          SLACK_BOT_TOKEN: ${{secrets.SHARED_BOT_TOKEN}}
+          SLACK_BOT_TOKEN: ${{ secrets.SHARED_BOT_TOKEN }}
