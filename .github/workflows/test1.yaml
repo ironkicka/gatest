@@ -15,4 +15,3 @@ jobs:
           args: '{\"channel\":\"C01ETF52FK5\", \"text\":\"<!here>\n:fire::fire::fire: 変更あリ！ :fire::fire::fire:\nAuthor: ${{github.event.commits[0].author.username}}\nCommit_message: ${{github.event.commits[0].message}}\nURL: ${{github.event.commits[0].url}}\"}'
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SHARED_BOT_TOKEN }}
-          
