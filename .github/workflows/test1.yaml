@@ -2,7 +2,7 @@ name: change-detector
 on:
   push:
     branches:
-      - main
+      - develop
     paths:
       - 'test/sub/**'
 jobs:
