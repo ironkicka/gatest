@@ -12,6 +12,6 @@ jobs:
       - name: Send notification to Slack when develop/clien_web/shared/** has been updated
         uses: abinoda/slack-action@v1.0.7
         with:
-          args: '{\"channel\":\"C01ETF52FK5\", \"text\":\"<!here>\n:fire::fire::fire: 変更あリ！ :fire::fire::fire:\nAuthor: ${{github.event.commits[0].author.username}}\nCommit_message: ${{github.event.commits[0].message}}\nURL: ${{github.event.commits[0].url}}\"}'
+          args: '{\"channel\":\"C01ETF52FK5\", \"text\":\"\n:fire::fire::fire: 変更あリ！ :fire::fire::fire:\nAuthor: ${{github.event.commits[0].author.username}}\nCommit_message: ${{github.event.commits[0].message}}\nURL: ${{github.event.commits[0].url}}\"}'
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SHARED_BOT_TOKEN }}
